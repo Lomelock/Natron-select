@@ -630,21 +630,6 @@
             });
         </script>
           
-            accordionHeaders.forEach(header => {
-              header.addEventListener('click', () => {
-                const item = header.parentElement;
-          
-                // Optional: Close other open items if you want only one open at a time
-                document.querySelectorAll('.accordion-item').forEach(i => {
-                  if (i !== item) i.classList.remove('active');
-                });
-          
-                // Toggle the clicked item
-                item.classList.toggle('active');
-              });
-            });
-          </script>
-          
         <div id="adventure-packages" class="content-section">
             <h2>Adventure Packages</h2>
             <p>For thrill-seekers, our adventure packages offer exciting and adrenaline-filled experiences.</p>
