@@ -552,6 +552,21 @@
             <h2>Family Packages</h2>
             <p>Create unforgettable memories with your loved ones on our family-friendly safaris.</p>
             <div class="itinerary-container">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h2>7-Day Northern Circuit Safari – Family Package</h2>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="intro-text">Create unforgettable memories with your loved ones on our family-friendly safaris.</p>
+                        <div class="itinerary-day">
+                            <h3>Day 1: Arrival in Arusha – Welcome to Tanzania</h3>
+                            <p>Upon arrival at Kilimanjaro International Airport, you'll be warmly welcomed by your safari guide and transferred to your hotel in Arusha. Settle in, enjoy a refreshing welcome drink, and receive a detailed safari briefing to get you ready for the adventure ahead.</p>
+                            <p><strong>Overnight:</strong> Four Points by Sheraton Arusha (Family Room)  
+                            <br><strong>Meals:</strong> Dinner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
                 <h2>7-Day Northern Circuit Safari – Family Package</h2>
                 <p class="intro-text">Create unforgettable memories with your loved ones on our family-friendly safaris.</p>
               
@@ -596,23 +611,24 @@
                   <p><strong>Overnight:</strong> Ngorongoro Serena Safari Lodge (Family Room with Crater View)  
                   <br><strong>Meals:</strong> Breakfast, Lunch, Dinner</p>
                 </div>
-              
-                <div class="itinerary-day">
-                  <h3>Day 7: Ngorongoro Crater to Arusha – Departure</h3>
-                  <p>Descend early into the Ngorongoro Crater for a half-day game drive in this UNESCO World Heritage Site, home to the densest population of wildlife in Africa. After a picnic breakfast near the hippo pool, begin the drive back to Arusha. Depending on your flight schedule, a day room can be arranged for freshening up before your transfer to the airport.</p>
-                  <p><strong>Day Use Room:</strong> Arusha Planet Lodge (if needed)  
-                  <br><strong>Meals:</strong> Breakfast, Lunch</p>
-                </div>
-              
-                <div class="itinerary-highlight">
-                  <strong>What Makes This Family Safari Special:</strong>  
-                  This package is crafted with families in mind—featuring family suites, kid-friendly meals, flexible game drives, and engaging cultural experiences. With our expert guides and comfortable accommodations, both kids and adults will leave with lifelong memories.
-                </div>
-              </div>
-              
-        </div>
         <script>
+            // Ensure the accordion functionality works by adding the correct structure
             const accordionHeaders = document.querySelectorAll('.accordion-header');
+          
+            accordionHeaders.forEach(header => {
+              header.addEventListener('click', () => {
+                const item = header.parentElement;
+          
+                // Optional: Close other open items if you want only one open at a time
+                document.querySelectorAll('.accordion-item').forEach(i => {
+                  if (i !== item) i.classList.remove('active');
+                });
+          
+                // Toggle the clicked item
+                item.classList.toggle('active');
+              });
+            });
+        </script>
           
             accordionHeaders.forEach(header => {
               header.addEventListener('click', () => {
